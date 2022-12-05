@@ -96,7 +96,7 @@ predicted_class = lr.predict([person])
 # Generate probability of positive class (=1)
 probs = lr.predict_proba([person])
 
-st.subheader('Is this person a Linkedin user')
+st.subheader('Is this person a Linkedin user?')
 st.write(predicted_class)
     
 st.subheader('What is the probaility that this person is a Linkedin user')
