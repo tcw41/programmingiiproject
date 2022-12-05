@@ -84,7 +84,7 @@ user_married= st.selectbox("Are you married? If so select 1, if not select 0",op
 user_parent= st.selectbox("Are you a parent? If so select 1, if not select 0",options=[1,0])
 st.markdown("What is your education. 1= Less than High School, 2= HS incomplete, 3=HS diploma, 4= some college, 5= two year college, 6= 4 year college, 7= post graduate schooling, 8=PHD")
 user_education= st.slider("What is your highest education", min_value=1, max_value=8,value= 1, step=1)
-st.markdown("What is your income? 1= Less than $10,000, 2= 10 to under $20,000, 3= 20 to under $30,000, 4= 30 to under $40,000, 5= 40 to under $50,000, 6=50 to under $60,000, 7=70 to under $100,000, 8=100 to under $150,000, 9= more than $150,000")
+st.markdown("What is your income 1= Less than $10,000 2= 10 to under $20,000 3= 20 to under $30,000 4= 30 to under $40,000 5= 40 to under $50,000 6=50 to under $60,000 7=70 to under $100,000 8=100 to under $150,000 9= more than $150,000")
 user_income= st.slider("What is your income", min_value=1, max_value=9,value= 1, step=1)
 
 #User inputs used in logistic regression
@@ -97,7 +97,11 @@ predicted_class = lr.predict([person])
 probs = lr.predict_proba([person])
 
 st.subheader('Is this person a Linkedin user?')
-st.write(predicted_class)
+if predicted_class > 0:
+    label= "This is a Linkedin user!"
+else:
+    label= "This is not a Linkedin user!"
+st.write(label)
     
 st.subheader('What is the probaility that this person is a Linkedin user')
 st.write(probs)
