@@ -5,9 +5,9 @@ import streamlit as st
 
 ##The ways I trying to read in a csv file that aren't working in Streamlit
 
-os.getcwd()
+##os.getcwd()
 
-os.chdir('//Users//taylorwhitelow//Downloads')
+##os.chdir('//Users//taylorwhitelow//Downloads')
 
 s= pd.read_csv('social_media_usage.csv')
 print(s)
