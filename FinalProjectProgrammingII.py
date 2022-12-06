@@ -2,11 +2,11 @@
 import os
 import pandas as pd
 import streamlit as st
-os.getcwd()
+##os.getcwd()
 
-os.chdir('//Users//taylorwhitelow//Downloads')
+##os.chdir('//Users//taylorwhitelow//Downloads')
 
-s= pd.read_csv('//Users/taylorwhitelow/Downloads/social_media_usage.csv')
+s= pd.read_csv('Downloads/social_media_usage.csv')
 print(s)
 
 import pandas as pd
