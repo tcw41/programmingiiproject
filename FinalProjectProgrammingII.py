@@ -1,13 +1,21 @@
 ####Part 1
-import os
+##import os
 import pandas as pd
 import streamlit as st
-os.getcwd()
+##os.getcwd()
 
-os.chdir('//Users//taylorwhitelow//Downloads')
+##os.chdir('//Users//taylorwhitelow//Downloads')
 
-s= pd.read_csv('social_media_usage.csv')
-print(s)
+##s= pd.read_csv('social_media_usage.csv')
+##print(s)
+
+##from pathlib import Path
+
+##s= Path(__file__).parents[1] / 'Downloads/social_media_usage.csv'
+
+##print(s)
+
+s= pd.read_csv('Downloads/social_media_usage.csv').iloc[1:,:]
 
 import pandas as pd
 import numpy as np
