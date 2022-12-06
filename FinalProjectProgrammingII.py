@@ -1,13 +1,16 @@
 ####Part 1
-##import os
+import os
 import pandas as pd
 import streamlit as st
-##os.getcwd()
 
-##os.chdir('//Users//taylorwhitelow//Downloads')
+##The ways I trying to read in a csv file that aren't working in Streamlit
 
-##s= pd.read_csv('social_media_usage.csv')
-##print(s)
+os.getcwd()
+
+os.chdir('//Users//taylorwhitelow//Downloads')
+
+s= pd.read_csv('social_media_usage.csv')
+print(s)
 
 ##from pathlib import Path
 
@@ -15,7 +18,10 @@ import streamlit as st
 
 ##print(s)
 
-s= pd.read_csv('Downloads/social_media_usage.csv').iloc[1:,:]
+##s= pd.read_csv('Downloads/social_media_usage.csv').iloc[1:,:]
+
+s= pd.read_csv('social_media_usage.csv')
+st.dataframe(s)
 
 import pandas as pd
 import numpy as np
