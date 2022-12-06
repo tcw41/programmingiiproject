@@ -6,7 +6,7 @@ os.getcwd()
 
 os.chdir('//Users//taylorwhitelow//Downloads')
 
-s= pd.read_csv('Downloads/social_media_usage.csv')
+s= pd.read_csv('social_media_usage.csv')
 print(s)
 
 import pandas as pd
@@ -105,4 +105,3 @@ st.write(label)
     
 st.subheader('What is the probaility that this person is a Linkedin user')
 st.write(probs)
-
