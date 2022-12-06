@@ -1,5 +1,5 @@
 ####Part 1
-import os
+##import os
 import pandas as pd
 import streamlit as st
 
@@ -9,8 +9,8 @@ import streamlit as st
 
 ##os.chdir('//Users//taylorwhitelow//Downloads')
 
-s= pd.read_csv('social_media_usage.csv')
-print(s)
+##s= pd.read_csv('social_media_usage.csv')
+##print(s)
 
 ##from pathlib import Path
 
