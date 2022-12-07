@@ -56,7 +56,7 @@ ss= pd.DataFrame({
     'parent':np.where(s["par"]==1,1,0),
     'martial':np.where(s["marital"]==1,1,0),
     'female':np.where(s["gender"]==2,1,0),
-    'age':np.where(s["age"]<=98,np.nan, s["age"])
+    'age':np.where(s["age"]>98,np.nan, s["age"])
     
 }).dropna()
 
