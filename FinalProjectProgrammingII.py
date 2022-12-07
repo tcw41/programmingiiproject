@@ -58,7 +58,9 @@ ss= pd.DataFrame({
     'female':np.where(s["gender"]==2,1,0),
     'age':np.where(s["age"]<=98, s["age"],np.nan)
     
-}).dropna()
+})
+
+ss=ss.dropna()
 
 ss= ss.astype(int)
 
