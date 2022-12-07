@@ -51,7 +51,7 @@ linkedinfuction(z)
 #### Part 3
 ss= pd.DataFrame({
     'sm_li':np.where(s["web1h"]==1,1,0),
-    'income':np.where(s["income"]<=9,np.nan, s["income"]),
+    'income':np.where(s["income"]>9,np.nan, s["income"]),
     'education':np.where(s["educ2"]>8,np.nan, s["educ2"]),
     'parent':np.where(s["par"]==1,1,0),
     'martial':np.where(s["marital"]==1,1,0),
