@@ -73,7 +73,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,
                                                     random_state=987)
 
 #### Part 6 Logistic regression
-lr = LogisticRegression(class_weight='balanced',random_state=0,n_jobs=-1)
+lr = LogisticRegression(class_weight='balanced') ##,random_state=0,n_jobs=-1 is the part after this that I took out
 lr.fit(X_train, y_train)
 
 #### Part 7 making confusion matrix
