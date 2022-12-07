@@ -21,7 +21,7 @@ import streamlit as st
 ##s= pd.read_csv('Downloads/social_media_usage.csv').iloc[1:,:]
 
 s= pd.read_csv('social_media_usage.csv')
-st.dataframe(s)
+##st.dataframe(s)
 
 import pandas as pd
 import numpy as np
